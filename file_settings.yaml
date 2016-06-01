@@ -1,0 +1,17 @@
+api_token: 'Insert API Token'
+
+matchers:
+    - match:          '^GC_AUTO_BC[0-9]{2}_.*_R_([0-9]{8}|[0-9]{8}-[0-9]{8}).dat$'
+      experiment_id:  '77' 
+      filetype:       'RAW' 
+      description:    'My Description' 
+      format:         'CSV'
+      extract_date:   'True'   # Should the script extract the start/end date from the filename?
+      date_position:  5      # Using '_' as a file seperator, which position is the date at (0 as the first position) 
+    - match:          'GHS36_AUTO_*_R_*.dat$'
+      experiment_id:  '77'
+      filetype:       'RAW' 
+      description:    'My Description' 
+      format:         'CSV'
+      extract_date:   'True'   # Should the script extract the start/end date from the filename?
+      date_position:  5      # Using '_' as a file seperator, which position is the date at (0 as the first position) 

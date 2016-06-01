@@ -1,0 +1,6 @@
+#Ignore unneeded files
+log.txt
+.pydevproject
+.project
+Data/*
+Backups/*
